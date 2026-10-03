@@ -1,0 +1,23 @@
+# House Price Predictor
+## Project purpose
+Predict house prices in Rwanda using multiple linear regression.
+## Dataset
+Target: `House_Price_Million_RWF`. `House_ID` is excluded from predictors.
+## Model
+80/20 split with `random_state=42`; one-hot encoding for Neighborhood; LinearRegression pipeline.
+## Performance
+Test R²: 0.7879
+Test RMSE: 22.94 million RWF
+## Run locally
+`pip install -r requirements.txt`
+`streamlit run app.py`
+## Live app
+https://your-app-name.streamlit.app
+## Project Structure
+
+- `app.py` – Streamlit web application for house price prediction
+- `house_price_model.sav` – Trained Linear Regression model
+- `house_price_prediction_dataset.csv` – Original dataset
+- `house_price_prediction_cleaned.csv` – Cleaned dataset
+- `Machine_Learning_Assignment_2_Solution.ipynb` – Machine learning analysis and model development
+- `requirements.txt` – Python dependencies
